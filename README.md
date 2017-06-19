@@ -12,7 +12,7 @@
 #### OperatorDemo.sh	    运算符demo（算数运算符expr，关系运算符，布尔运算符，字符串运算符，文件测试运算符）
 #### nginx.sh             ngxin负载多个tomcat，更新代码脚本。
 ###### 具体步骤：
-1、更新代码到备用tomcat，web2，执行/opt/bin/nginx-web.sh 8072   2、更新代码到主用tomcat，web，执行/opt/bin/nginx-web.sh 8071
+1、更新代码到备用tomcat，web2，执行/opt/bin/nginx-web.sh 8072    </br>   2、更新代码到主用tomcat，web，执行/opt/bin/nginx-web.sh 8071
 ### 待完成
 #### Shell输入输出重定向    参考 http://c.biancheng.net/cpp/view/2738.html
 #### Shell文件包含          参考 http://c.biancheng.net/cpp/view/2740.html
