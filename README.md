@@ -19,7 +19,7 @@
 #### 二、automation.sh         自动化部署代码到线上脚本
 ###### 具体步骤：     
 git拉取代码，mvn编译代码，按照nginx.sh的使用步骤逐个更新tomcat，切换nginx
-#### santomcat.sh      	tomcat部署
+#### 三、tomcat.sh      	     tomcat部署
 ###### 具体步骤：  
 查询进程，杀进程，重启
 
