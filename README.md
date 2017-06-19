@@ -16,7 +16,7 @@
 ###### 具体步骤：
 1、更新代码到备用tomcat，web2，执行/opt/bin/nginx-web.sh 8072</br>
 2、更新代码到主用tomcat，web，执行/opt/bin/nginx-web.sh 8071
-#### 二、automation.sh         自动化部署代码到线上脚本
+#### 二、automation.sh        自动化部署代码到线上脚本
 ###### 具体步骤：     
 git拉取代码，mvn编译代码，按照nginx.sh的使用步骤逐个更新tomcat，切换nginx
 #### 三、tomcat.sh      	     tomcat部署
