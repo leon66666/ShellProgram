@@ -1,5 +1,5 @@
 # ShellProgram
-
+### 赋予可执行权限：chmod +x xxx.sh
 ### 已完成
 #### 一、HelloDemo.sh	        第一个例子
 #### 二、VariableDemo.sh	    变量demo 
