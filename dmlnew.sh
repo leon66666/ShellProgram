@@ -5,7 +5,7 @@ MYSQL_HOST24=192.168.1.24
 MYSQL_USER=root
 PORT=3306
 MYSQL_PASSWORD='password'
-MYSQL_DATABASE30='26 27 28 29 31 32 34 35 36'
+MYSQL_DATABASE30='26 27 28 29 31 32 33 34 35 36'
 MYSQL_DATABASE24='hoomxb_anqi hoomxb_hehuanhuan hoomxb_liuyan hoomxb_luzongwei hoomxb_tianye hoomxb_wanghaiyang hoomxb_wanghuidong hoomxb_wangtongkai hoomxb_wangzhongqiu hoomxb_zhaoxiuhuan hoomxb_zhengdongwen'
 SQL_INPUT=`cat /scripts/sql.txt`
 SQL_INIT=`cat /scripts/init.txt`
@@ -45,23 +45,23 @@ then
 for i in $MYSQL_DATABASE30
 do
 echo "192.168.1.${i}"
-ssh -l hsadmin 192.168.1.${i} -C "sh /opt/scripts/kill_all.sh"
+ssh -l hsadmin 192.168.1.${i} -C "source /etc/profile && /./scripts/kill_all.sh"
 sleep 5
 echo "hoomxb${i}"
 mysql -h${MYSQL_HOST30}  -P${PORT}  -u${MYSQL_USER} -p${MYSQL_PASSWORD} "hoomxb"${i} -e  "source /scripts/sql.txt"
 mysql -h${MYSQL_HOST30}  -P${PORT}  -u${MYSQL_USER} -p${MYSQL_PASSWORD} "hoomxb"${i} -e  "source /scripts/init.txt"
 sleep 5
-ssh -l hsadmin 192.168.1.${i} -C "sh /opt/scripts/start_and_init_all.sh"
+ssh -l hsadmin 192.168.1.${i} -C "source /etc/profile && /./scripts/start_and_init_all.sh"
 done
 else
 echo "192.168.1.${db}"
-ssh -l hsadmin 192.168.1.${db} -C "sh /scripts/kill_all.sh"
+ssh -l hsadmin 192.168.1.${db} -C "source /etc/profile && /./scripts/kill_all.sh"
 sleep 5
 echo "hoomxb${db}"
 mysql -h${MYSQL_HOST30}  -P${PORT}  -u${MYSQL_USER} -p${MYSQL_PASSWORD} "hoomxb"${db} -e  "source /scripts/sql.txt"
 mysql -h${MYSQL_HOST30}  -P${PORT}  -u${MYSQL_USER} -p${MYSQL_PASSWORD} "hoomxb"${db} -e  "source /scripts/init.txt"
 sleep 5
-ssh -l hsadmin 192.168.1.${db} -C "sh /scripts/start_and_init_all.sh"
+ssh -l hsadmin 192.168.1.${db} -C "source /etc/profile && /./scripts/start_and_init_all.sh"
 fi
 ;;
 *)
