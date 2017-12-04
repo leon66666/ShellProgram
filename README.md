@@ -1,5 +1,5 @@
 # ShellProgram
-### 赋予可执行权限：chmod +x xxx.sh
+### 赋予可执行权限：chmod 777 xxx.sh
 ### 已完成
 #### 一、HelloDemo.sh	        第一个例子
 #### 二、VariableDemo.sh	    变量demo 
@@ -22,6 +22,8 @@ git拉取代码，mvn编译代码，按照nginx.sh的使用步骤逐个更新tom
 #### 三、tomcat.sh      	     tomcat部署
 ###### 具体步骤：  
 查询进程，杀进程，重启
+#### 四、dml.sh，dmlnew.sh,dmltest.sh     统一刷新测试环境数据
+###### 具体步骤：
 
 
 ### 待完成
