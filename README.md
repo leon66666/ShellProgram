@@ -23,7 +23,7 @@ git拉取代码，mvn编译代码，按照nginx.sh的使用步骤逐个更新tom
 ###### 具体步骤：  
 查询进程，杀进程，重启
 #### 四、dml.sh，dmlnew.sh,dmltest.sh     统一刷新测试环境数据
-###### 具体步骤：
+#### 五、kill.sh(杀掉所有项目程序)start_and_init.sh（启动所有项目程序，并完成redis数据初始化） 
 
 
 ### 待完成
